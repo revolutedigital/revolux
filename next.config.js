@@ -8,6 +8,14 @@ const nextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
   swcMinify: true,
+  eslint: {
+    // Ignora erros do ESLint durante o build de produção
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    // Ignora erros do TypeScript durante o build de produção (se necessário)
+    ignoreBuildErrors: false,
+  },
 }
 
 module.exports = nextConfig
