@@ -1,25 +1,7 @@
+'use client'
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Copywriting para Página de Vendas que Converte | Guia Completo',
-  description: 'Domine copywriting estratégico para páginas de vendas. Framework AIDA, gatilhos mentais, headlines matadoras e técnicas comprovadas para multiplicar conversões.',
-  keywords: ['copywriting', 'página de vendas', 'AIDA', 'gatilhos mentais', 'conversão', 'headline', 'storytelling', 'CTA'],
-  openGraph: {
-    title: 'Copywriting para Página de Vendas que Converte',
-    description: 'Framework AIDA, gatilhos mentais e técnicas comprovadas para criar páginas de vendas que realmente convertem',
-    type: 'article',
-    publishedTime: '2025-01-01T00:00:00Z',
-    authors: ['Revolux Digital'],
-    tags: ['copywriting', 'página de vendas', 'AIDA', 'gatilhos mentais', 'conversão'],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Copywriting para Página de Vendas que Converte',
-    description: 'Framework AIDA e gatilhos mentais para criar páginas que vendem',
-  },
-}
 
-'use client'
 
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'

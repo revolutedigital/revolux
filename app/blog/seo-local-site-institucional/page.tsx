@@ -1,25 +1,7 @@
+'use client'
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'SEO Local para Site Institucional: Como Aparecer no Google | Revolux',
-  description: 'Guia completo de SEO local para sites institucionais. Google Meu Negócio, palavras-chave locais, avaliações, NAP consistency e backlinks regionais para dominar sua área.',
-  keywords: ['SEO local', 'site institucional', 'Google Meu Negócio', 'local pack', 'avaliações Google', 'NAP', 'backlinks locais'],
-  openGraph: {
-    title: 'SEO Local para Site Institucional: Como Aparecer no Google',
-    description: 'Domine o SEO local e apareça no topo do Google na sua região. Google Meu Negócio, NAP consistency e estratégias comprovadas',
-    type: 'article',
-    publishedTime: '2024-12-29T00:00:00Z',
-    authors: ['Revolux Digital'],
-    tags: ['SEO local', 'site institucional', 'Google Meu Negócio', 'local pack', 'avaliações'],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'SEO Local para Site Institucional: Como Aparecer no Google',
-    description: 'Domine o SEO local e apareça no topo do Google na sua região',
-  },
-}
 
-'use client'
 
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'

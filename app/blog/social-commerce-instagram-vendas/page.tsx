@@ -1,25 +1,7 @@
+'use client'
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Social Commerce: Como Vender pelo Instagram em 2025 | Revolux',
-  description: 'Guia completo de social commerce no Instagram. Instagram Shopping, live shopping, stories com produtos, reels e influencer marketing para multiplicar vendas online.',
-  keywords: ['social commerce', 'Instagram Shopping', 'vendas Instagram', 'live shopping', 'influencer marketing', 'reels', 'checkout nativo'],
-  openGraph: {
-    title: 'Social Commerce: Como Vender pelo Instagram em 2025',
-    description: 'Transforme o Instagram em máquina de vendas. Shopping, lives, stories e estratégias comprovadas de social commerce',
-    type: 'article',
-    publishedTime: '2024-12-27T00:00:00Z',
-    authors: ['Revolux Digital'],
-    tags: ['social commerce', 'Instagram Shopping', 'vendas Instagram', 'live shopping', 'influencer marketing'],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Social Commerce: Como Vender pelo Instagram em 2025',
-    description: 'Transforme o Instagram em máquina de vendas com social commerce',
-  },
-}
 
-'use client'
 
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'

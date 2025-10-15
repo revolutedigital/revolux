@@ -1,25 +1,7 @@
+'use client'
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Site Institucional para Empresas B2B: O Que Não Pode Faltar | Revolux',
-  description: 'Entenda por que um site institucional profissional é essencial para empresas B2B e quais elementos são indispensáveis para gerar credibilidade e conquistar clientes corporativos.',
-  keywords: ['site institucional', 'B2B', 'presença digital', 'credibilidade empresarial', 'website corporativo', 'marketing B2B'],
-  openGraph: {
-    title: 'Site Institucional para Empresas B2B: O Que Não Pode Faltar',
-    description: 'Elementos indispensáveis para um site institucional B2B que gera credibilidade e conquista clientes corporativos',
-    type: 'article',
-    publishedTime: '2025-01-10T00:00:00Z',
-    authors: ['Revolux Digital'],
-    tags: ['site institucional', 'B2B', 'presença digital', 'credibilidade empresarial'],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Site Institucional para Empresas B2B: O Que Não Pode Faltar',
-    description: 'Elementos indispensáveis para um site institucional B2B que gera credibilidade e conquista clientes corporativos',
-  },
-}
 
-'use client'
 
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'

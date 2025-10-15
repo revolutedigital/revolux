@@ -1,25 +1,7 @@
+'use client'
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Automação de Processos com IA para Empresas | Guia Completo 2025',
-  description: 'Automatize processos empresariais com IA e recupere centenas de horas por mês. RPA, hiperautomação, agentes inteligentes, Zapier, Make e n8n. ROI comprovado.',
-  keywords: ['automação', 'RPA', 'inteligência artificial', 'hiperautomação', 'agentes IA', 'Zapier', 'Make', 'n8n', 'email marketing'],
-  openGraph: {
-    title: 'Automação de Processos com IA para Empresas',
-    description: 'Automatize processos com IA e economize centenas de horas. RPA, hiperautomação e agentes inteligentes com ROI comprovado',
-    type: 'article',
-    publishedTime: '2024-12-25T00:00:00Z',
-    authors: ['Revolux Digital'],
-    tags: ['automação', 'RPA', 'inteligência artificial', 'hiperautomação', 'agentes IA'],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Automação de Processos com IA para Empresas',
-    description: 'Automatize processos com IA e economize centenas de horas',
-  },
-}
 
-'use client'
 
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'

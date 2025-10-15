@@ -1,25 +1,7 @@
+'use client'
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Landing Page Otimizada para Google Ads: Checklist Completo | Revolux',
-  description: 'Checklist completo para criar landing pages otimizadas para Google Ads. Maximize Quality Score, reduza CPC e triplique suas conversões com o mesmo orçamento.',
-  keywords: ['landing page', 'Google Ads', 'Quality Score', 'CPC', 'conversão', 'otimização', 'pixel', 'rastreamento'],
-  openGraph: {
-    title: 'Landing Page Otimizada para Google Ads: Checklist Completo',
-    description: 'Maximize Quality Score e triplique conversões do Google Ads com landing pages otimizadas. Guia completo com checklist prático',
-    type: 'article',
-    publishedTime: '2025-01-03T00:00:00Z',
-    authors: ['Revolux Digital'],
-    tags: ['landing page', 'Google Ads', 'Quality Score', 'conversão', 'otimização'],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Landing Page Otimizada para Google Ads: Checklist Completo',
-    description: 'Maximize Quality Score e triplique conversões do Google Ads',
-  },
-}
 
-'use client'
 
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'

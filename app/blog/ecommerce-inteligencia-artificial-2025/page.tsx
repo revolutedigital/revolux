@@ -1,25 +1,7 @@
+'use client'
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'E-commerce com Inteligência Artificial: Tendências 2025 | Revolux',
-  description: 'Descubra como a IA está revolucionando o e-commerce em 2025. IA generativa, chatbots inteligentes, personalização extrema e análise preditiva para multiplicar suas vendas.',
-  keywords: ['e-commerce', 'inteligência artificial', 'IA', 'chatbot', 'personalização', 'análise preditiva', 'social commerce', 'automação'],
-  openGraph: {
-    title: 'E-commerce com Inteligência Artificial: Tendências 2025',
-    description: 'Como a IA está transformando lojas online em máquinas de vendas inteligentes com chatbots, personalização e análise preditiva',
-    type: 'article',
-    publishedTime: '2025-01-08T00:00:00Z',
-    authors: ['Revolux Digital'],
-    tags: ['e-commerce', 'inteligência artificial', 'IA', 'chatbot', 'personalização', 'automação'],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'E-commerce com Inteligência Artificial: Tendências 2025',
-    description: 'Como a IA está transformando lojas online em máquinas de vendas inteligentes',
-  },
-}
 
-'use client'
 
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'

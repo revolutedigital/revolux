@@ -1,25 +1,7 @@
+'use client'
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Chatbot com IA para WhatsApp Business: Guia Prático 2025 | Revolux',
-  description: 'Aprenda a implementar chatbot com IA no WhatsApp Business. Atendimento 24/7, qualificação de leads, automação de vendas e integração com CRM. Guia completo passo a passo.',
-  keywords: ['chatbot', 'WhatsApp Business', 'inteligência artificial', 'automação', 'atendimento', 'leads', 'CRM', 'vendas automatizadas'],
-  openGraph: {
-    title: 'Chatbot com IA para WhatsApp Business: Guia Prático',
-    description: 'Multiplique suas vendas com chatbot inteligente no WhatsApp. Atendimento 24/7, qualificação automática de leads e integração com CRM',
-    type: 'article',
-    publishedTime: '2025-01-05T00:00:00Z',
-    authors: ['Revolux Digital'],
-    tags: ['chatbot', 'WhatsApp Business', 'inteligência artificial', 'automação', 'vendas'],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Chatbot com IA para WhatsApp Business: Guia Prático',
-    description: 'Multiplique suas vendas com chatbot inteligente no WhatsApp',
-  },
-}
 
-'use client'
 
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'

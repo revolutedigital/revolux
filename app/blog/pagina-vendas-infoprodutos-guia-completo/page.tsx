@@ -1,25 +1,7 @@
+'use client'
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Página de Vendas para Infoprodutos: Guia Completo 2025 | Revolux',
-  description: 'Aprenda a estrutura exata de uma página de vendas persuasiva que converte visitantes em compradores. Guia completo para cursos online, mentorias e e-books.',
-  keywords: ['página de vendas', 'infoproduto', 'copywriting', 'curso online', 'sales page', 'conversão', 'vendas online'],
-  openGraph: {
-    title: 'Página de Vendas para Infoprodutos: Guia Completo 2025',
-    description: 'Estrutura exata de uma página de vendas persuasiva que converte visitantes em compradores',
-    type: 'article',
-    publishedTime: '2025-01-12T00:00:00Z',
-    authors: ['Revolux Digital'],
-    tags: ['página de vendas', 'infoproduto', 'copywriting', 'curso online'],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Página de Vendas para Infoprodutos: Guia Completo 2025',
-    description: 'Estrutura exata de uma página de vendas persuasiva que converte visitantes em compradores',
-  },
-}
 
-'use client'
 
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'

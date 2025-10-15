@@ -1,25 +1,7 @@
+'use client'
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Como Criar Landing Page de Alta Conversão em 2025 | Guia Completo',
-  description: 'Descubra as técnicas comprovadas para criar landing pages que convertem visitantes em leads qualificados. Guia completo com exemplos práticos, CTAs estratégicos e otimização de formulários.',
-  keywords: ['landing page', 'conversão', 'leads', 'CTA', 'página de captura', 'marketing digital', 'otimização de conversão'],
-  openGraph: {
-    title: 'Como Criar Landing Page de Alta Conversão em 2025',
-    description: 'Técnicas comprovadas para criar landing pages que convertem visitantes em leads qualificados',
-    type: 'article',
-    publishedTime: '2025-01-15T00:00:00Z',
-    authors: ['Revolux Digital'],
-    tags: ['landing page', 'conversão', 'leads', 'CTA', 'marketing digital'],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Como Criar Landing Page de Alta Conversão em 2025',
-    description: 'Técnicas comprovadas para criar landing pages que convertem visitantes em leads qualificados',
-  },
-}
 
-'use client'
 
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
