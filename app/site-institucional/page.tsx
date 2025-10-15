@@ -422,7 +422,7 @@ export default function SiteInstitucional() {
               viewport={{ once: true }}
             >
               <Card>
-                <ContactForm formType="site-institucional" />
+                <ContactForm formType="institutional" />
               </Card>
             </motion.div>
           </div>

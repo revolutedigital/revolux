@@ -446,7 +446,7 @@ export default function PaginaDeVendas() {
               viewport={{ once: true }}
             >
               <Card>
-                <ContactForm formType="pagina-vendas" />
+                <ContactForm formType="sales-page" />
               </Card>
             </motion.div>
           </div>

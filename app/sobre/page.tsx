@@ -27,7 +27,14 @@ export default function Home() {
     window.open(`https://instagram.com/${instagram}`, '_blank')
   }
 
-  const services = [
+  const services: Array<{
+    icon: any;
+    title: string;
+    description: string;
+    href: string;
+    gradient: string;
+    badge?: string;
+  }> = [
     {
       icon: Palette,
       title: 'Infoprodutores',

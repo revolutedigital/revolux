@@ -7,7 +7,7 @@ import toast from 'react-hot-toast'
 import { Send } from 'lucide-react'
 
 interface ContactFormProps {
-  formType: 'custom' | 'express' | 'ecommerce' | 'landing-page' | 'sales-page'
+  formType: 'custom' | 'express' | 'ecommerce' | 'landing-page' | 'sales-page' | 'institutional'
 }
 
 export function ContactForm({ formType }: ContactFormProps) {
@@ -42,6 +42,7 @@ export function ContactForm({ formType }: ContactFormProps) {
       ecommerce: 'E-commerce',
       'landing-page': 'Landing Page',
       'sales-page': 'Página de Vendas',
+      institutional: 'Site Institucional',
     }
 
     const message = `
