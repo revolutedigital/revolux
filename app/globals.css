@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-revolux-dark text-white antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .container-revolux {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-revolux bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-revolux text-revolux-dark font-bold py-3 px-8 rounded-full hover:scale-105 transition-transform duration-200 shadow-lg hover:shadow-revolux-green/50;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-revolux-green text-revolux-green font-bold py-3 px-8 rounded-full hover:bg-revolux-green hover:text-revolux-dark transition-all duration-200;
+  }
+
+  .card-revolux {
+    @apply bg-revolux-dark-light border border-revolux-dark-lighter rounded-2xl p-6 hover:border-revolux-green/50 transition-all duration-300;
+  }
+}
