@@ -8,7 +8,10 @@ import { Portfolio } from '@/components/sections/Portfolio'
 import { InstagramVideos } from '@/components/sections/InstagramVideos'
 import { ScrollTracker } from '@/lib/analytics/scroll-tracker'
 import { ProductSchema } from '@/components/seo/ProductSchema'
+import { FAQSchema } from '@/components/seo/FAQSchema'
+import { ServiceSchema } from '@/components/seo/ServiceSchema'
 import { motion } from 'framer-motion'
+import Head from 'next/head'
 import {
   ShoppingCart,
   Package,
@@ -134,11 +137,30 @@ export default function Ecommerce() {
 
   return (
     <>
+      <Head>
+        <title>E-commerce Completo | Loja Virtual com Pagamento e Gestão Integrada</title>
+        <meta name="description" content="E-commerce completo com gestão de produtos, pagamento integrado e frete automático. Catálogo ilimitado de produtos, gateway de pagamento integrado, cálculo de frete automático, gestão completa de estoque e área do cliente. Venda online 24/7." />
+        <meta name="keywords" content="ecommerce, loja virtual, loja online, e-commerce completo, vender online, pagamento integrado, gestão de estoque, mercado pago, pagseguro, checkout online" />
+        <link rel="canonical" href="https://revolux.digital/ecommerce" />
+        <meta property="og:title" content="E-commerce Completo | Loja Virtual com Pagamento e Gestão Integrada" />
+        <meta property="og:description" content="E-commerce completo com gestão de produtos, pagamento integrado e frete automático. Catálogo ilimitado, gateway de pagamento integrado, gestão completa de estoque e área do cliente." />
+        <meta property="og:url" content="https://revolux.digital/ecommerce" />
+        <meta property="og:site_name" content="Revolux Digital" />
+        <meta property="og:type" content="website" />
+      </Head>
       <ProductSchema
         name="E-commerce Completo"
         description="E-commerce completo com gestão de produtos, pagamento integrado e frete automático. Catálogo ilimitado de produtos, gateway de pagamento integrado, cálculo de frete automático, gestão completa de estoque e área do cliente."
         price="R$ 4.997"
         category="Web Development Services"
+      />
+      <FAQSchema faqs={faqs} />
+      <ServiceSchema
+        name="E-commerce Completo"
+        description="E-commerce completo com gestão de produtos, pagamento integrado e frete automático. Catálogo ilimitado de produtos, gateway de pagamento integrado, cálculo de frete automático, gestão completa de estoque e área do cliente."
+        price="R$ 4.997"
+        category="Web Development Services"
+        url="https://revolux.digital/ecommerce"
       />
       <ScrollTracker />
       <Header />

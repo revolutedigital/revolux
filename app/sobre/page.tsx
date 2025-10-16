@@ -7,11 +7,13 @@ import { Card } from '@/components/ui/Card'
 import { ScrollTracker } from '@/lib/analytics/scroll-tracker'
 import { Portfolio } from '@/components/sections/Portfolio'
 import { InstagramVideos } from '@/components/sections/InstagramVideos'
+import { ServiceSchema } from '@/components/seo/ServiceSchema'
 import { trackLinkClick, trackWhatsAppClick } from '@/lib/analytics/analytics'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { Zap, Palette, ShoppingBag, ArrowRight, Clock, Star, Instagram } from 'lucide-react'
+import Head from 'next/head'
 
 export default function Home() {
   const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '5511999999999'
@@ -67,6 +69,24 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Sobre a Revolux Digital | 150+ Projetos Entregues | 98% Satisfação</title>
+        <meta name="description" content="Agência de desenvolvimento web especializada em landing pages, páginas de vendas, sites institucionais e e-commerce. 150+ projetos entregues com 98% de satisfação. Transformamos visitantes em clientes com soluções focadas em conversão." />
+        <meta name="keywords" content="revolux digital, agência web, desenvolvimento web, landing page, página de vendas, site institucional, ecommerce, sobre revolux" />
+        <link rel="canonical" href="https://revolux.digital/sobre" />
+        <meta property="og:title" content="Sobre a Revolux Digital | 150+ Projetos Entregues | 98% Satisfação" />
+        <meta property="og:description" content="Agência de desenvolvimento web especializada em landing pages, páginas de vendas, sites institucionais e e-commerce. 150+ projetos entregues com 98% de satisfação." />
+        <meta property="og:url" content="https://revolux.digital/sobre" />
+        <meta property="og:site_name" content="Revolux Digital" />
+        <meta property="og:type" content="website" />
+      </Head>
+      <ServiceSchema
+        name="Revolux Digital - Desenvolvimento Web"
+        description="Agência de desenvolvimento web especializada em landing pages, páginas de vendas, sites institucionais e e-commerce. 150+ projetos entregues com 98% de satisfação. Transformamos visitantes em clientes com soluções focadas em conversão."
+        price="R$ 1.997"
+        category="Web Development Services"
+        url="https://revolux.digital/sobre"
+      />
       <ScrollTracker />
       <Header />
 

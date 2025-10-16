@@ -8,7 +8,10 @@ import { Portfolio } from '@/components/sections/Portfolio'
 import { InstagramVideos } from '@/components/sections/InstagramVideos'
 import { ScrollTracker } from '@/lib/analytics/scroll-tracker'
 import { ProductSchema } from '@/components/seo/ProductSchema'
+import { FAQSchema } from '@/components/seo/FAQSchema'
+import { ServiceSchema } from '@/components/seo/ServiceSchema'
 import { motion } from 'framer-motion'
+import Head from 'next/head'
 import {
   Zap,
   Clock,
@@ -116,11 +119,30 @@ export default function SiteExpresso() {
 
   return (
     <>
+      <Head>
+        <title>Site Expresso 24h | Landing Page Profissional Entregue Amanhã</title>
+        <meta name="description" content="Entregamos landing pages profissionais em 24 horas, otimizadas para conversão e prontas para gerar vendas. Design responsivo, formulário de contato funcional, integração com WhatsApp, Google Analytics e Pixel configurados, SEO básico otimizado." />
+        <meta name="keywords" content="site 24 horas, landing page rápida, site urgente, entrega rápida, site expresso, landing page profissional, site em 1 dia, urgência" />
+        <link rel="canonical" href="https://revolux.digital/site-expresso" />
+        <meta property="og:title" content="Site Expresso 24h | Landing Page Profissional Entregue Amanhã" />
+        <meta property="og:description" content="Entregamos landing pages profissionais em 24 horas, otimizadas para conversão e prontas para gerar vendas. Design responsivo e pronto para tráfego pago." />
+        <meta property="og:url" content="https://revolux.digital/site-expresso" />
+        <meta property="og:site_name" content="Revolux Digital" />
+        <meta property="og:type" content="website" />
+      </Head>
       <ProductSchema
         name="Site Expresso 24h"
         description="Entregamos landing pages profissionais em 24 horas, otimizadas para conversão e prontas para gerar vendas. Design responsivo, formulário de contato funcional, integração com WhatsApp, Google Analytics e Pixel configurados, SEO básico otimizado."
         price="R$ 2.197"
         category="Web Development Services"
+      />
+      <FAQSchema faqs={faqs} />
+      <ServiceSchema
+        name="Site Expresso 24h"
+        description="Entregamos landing pages profissionais em 24 horas, otimizadas para conversão e prontas para gerar vendas. Design responsivo, formulário de contato funcional, integração com WhatsApp, Google Analytics e Pixel configurados, SEO básico otimizado."
+        price="R$ 2.197"
+        category="Web Development Services"
+        url="https://revolux.digital/site-expresso"
       />
       <ScrollTracker />
       <Header />

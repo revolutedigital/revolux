@@ -7,7 +7,10 @@ import { ContactForm } from '@/components/sections/ContactForm'
 import { Portfolio } from '@/components/sections/Portfolio'
 import { InstagramVideos } from '@/components/sections/InstagramVideos'
 import { ScrollTracker } from '@/lib/analytics/scroll-tracker'
+import { FAQSchema } from '@/components/seo/FAQSchema'
+import { ServiceSchema } from '@/components/seo/ServiceSchema'
 import { motion } from 'framer-motion'
+import Head from 'next/head'
 import {
   Code,
   Bot,
@@ -166,6 +169,25 @@ export default function SitesPersonalizados() {
 
   return (
     <>
+      <Head>
+        <title>Desenvolvimento Web Personalizado | Sistemas, IA e Automações</title>
+        <meta name="description" content="Desenvolvemos soluções personalizadas que automatizam processos, economizam horas e multiplicam resultados com inteligência artificial. Sistemas web customizados, chatbots de IA, automações e integrações sob medida para seu negócio." />
+        <meta name="keywords" content="desenvolvimento personalizado, sistema web, chatbot IA, automação, inteligência artificial, desenvolvimento sob medida, CRM customizado, ERP personalizado, WhatsApp bot, integração de sistemas" />
+        <link rel="canonical" href="https://revolux.digital/sites-personalizados" />
+        <meta property="og:title" content="Desenvolvimento Web Personalizado | Sistemas, IA e Automações" />
+        <meta property="og:description" content="Desenvolvemos soluções personalizadas que automatizam processos e multiplicam resultados com IA. Sistemas web, chatbots, automações e integrações sob medida." />
+        <meta property="og:url" content="https://revolux.digital/sites-personalizados" />
+        <meta property="og:site_name" content="Revolux Digital" />
+        <meta property="og:type" content="website" />
+      </Head>
+      <FAQSchema faqs={faqs} />
+      <ServiceSchema
+        name="Desenvolvimento Web Personalizado"
+        description="Desenvolvemos soluções personalizadas que automatizam processos, economizam horas e multiplicam resultados com inteligência artificial. Sistemas web customizados, chatbots de IA, automações e integrações sob medida para seu negócio."
+        price="R$ 3.000"
+        category="Web Development Services"
+        url="https://revolux.digital/sites-personalizados"
+      />
       <ScrollTracker />
       <Header />
 

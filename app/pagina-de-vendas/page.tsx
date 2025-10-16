@@ -8,7 +8,10 @@ import { Portfolio } from '@/components/sections/Portfolio'
 import { InstagramVideos } from '@/components/sections/InstagramVideos'
 import { ScrollTracker } from '@/lib/analytics/scroll-tracker'
 import { ProductSchema } from '@/components/seo/ProductSchema'
+import { FAQSchema } from '@/components/seo/FAQSchema'
+import { ServiceSchema } from '@/components/seo/ServiceSchema'
 import { motion } from 'framer-motion'
+import Head from 'next/head'
 import {
   TrendingUp,
   DollarSign,
@@ -148,11 +151,30 @@ export default function PaginaDeVendas() {
 
   return (
     <>
+      <Head>
+        <title>Página de Vendas para Infoprodutores | Copywriting que Converte 24/7</title>
+        <meta name="description" content="Estrutura long-form com copywriting profissional que vende cursos, mentorias e infoprodutos no automático. Copy de vendas com framework AIDA, prova social integrada e CTAs estratégicos posicionados em momentos-chave da jornada." />
+        <meta name="keywords" content="página de vendas, copywriting, infoprodutos, landing page de vendas, copy persuasivo, vendas automáticas, hotmart, eduzz, monetizze, página long-form" />
+        <link rel="canonical" href="https://revolux.digital/pagina-de-vendas" />
+        <meta property="og:title" content="Página de Vendas para Infoprodutores | Copywriting que Converte 24/7" />
+        <meta property="og:description" content="Estrutura long-form com copywriting profissional que vende cursos, mentorias e infoprodutos no automático. Copy de vendas com framework AIDA, prova social integrada e CTAs estratégicos." />
+        <meta property="og:url" content="https://revolux.digital/pagina-de-vendas" />
+        <meta property="og:site_name" content="Revolux Digital" />
+        <meta property="og:type" content="website" />
+      </Head>
       <ProductSchema
         name="Página de Vendas de Alta Conversão"
         description="Estrutura long-form com copywriting profissional que vende cursos, mentorias e infoprodutos no automático. Copy de vendas profissional com framework AIDA aplicado, prova social integrada e CTAs estratégicos posicionados em momentos-chave da jornada."
         price="R$ 1.997"
         category="Web Development Services"
+      />
+      <FAQSchema faqs={faqs} />
+      <ServiceSchema
+        name="Página de Vendas de Alta Conversão"
+        description="Estrutura long-form com copywriting profissional que vende cursos, mentorias e infoprodutos no automático. Copy de vendas profissional com framework AIDA aplicado, prova social integrada e CTAs estratégicos posicionados em momentos-chave da jornada."
+        price="R$ 1.997"
+        category="Web Development Services"
+        url="https://revolux.digital/pagina-de-vendas"
       />
       <ScrollTracker />
       <Header />

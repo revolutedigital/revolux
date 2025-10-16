@@ -8,7 +8,10 @@ import { Portfolio } from '@/components/sections/Portfolio'
 import { InstagramVideos } from '@/components/sections/InstagramVideos'
 import { ScrollTracker } from '@/lib/analytics/scroll-tracker'
 import { ProductSchema } from '@/components/seo/ProductSchema'
+import { FAQSchema } from '@/components/seo/FAQSchema'
+import { ServiceSchema } from '@/components/seo/ServiceSchema'
 import { motion } from 'framer-motion'
+import Head from 'next/head'
 import {
   Target,
   TrendingUp,
@@ -109,12 +112,32 @@ export default function LandingPageProduct() {
 
   return (
     <>
+      <Head>
+        <title>Landing Page de Alta Conversão | Capture Leads e Multiplique Vendas</title>
+        <meta name="description" content="Landing page estratégica focada em converter visitantes em leads qualificados. Design otimizado, copywriting persuasivo, integração com CRM e tráfego pago. Taxa de conversão de 15-25%. A partir de R$ 1.497." />
+        <meta name="keywords" content="landing page, página de captura, captura de leads, alta conversão, tráfego pago, facebook ads, google ads, CRM" />
+        <link rel="canonical" href="https://revolux.digital/landing-page" />
+        <meta property="og:title" content="Landing Page de Alta Conversão | Revolux Digital" />
+        <meta property="og:description" content="Capture leads e multiplique vendas com landing pages estratégicas. Taxa de conversão de 15-25%." />
+        <meta property="og:url" content="https://revolux.digital/landing-page" />
+        <meta property="og:site_name" content="Revolux Digital" />
+        <meta property="og:image" content="/images/og-image.png" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:type" content="website" />
+      </Head>
       <ProductSchema
         name="Landing Page de Alta Conversão"
         description="Landing page estratégica focada em UMA ação: capturar o contato do seu cliente ideal e transformá-lo em venda. Design estratégico de alta conversão com copywriting persuasivo, formulário de captura otimizado e integração completa com ferramentas de marketing."
         price="R$ 1.497"
         category="Web Development Services"
       />
+      <ServiceSchema
+        name="Landing Page de Alta Conversão"
+        description="Serviço de criação de landing pages estratégicas focadas em conversão. Inclui design, copywriting, integração com ferramentas de marketing e otimização para tráfego pago."
+        price="1497"
+        url="https://revolux.digital/landing-page"
+      />
+      <FAQSchema faqs={faqs} />
       <ScrollTracker />
       <Header />
 

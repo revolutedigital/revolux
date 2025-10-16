@@ -8,7 +8,10 @@ import { Portfolio } from '@/components/sections/Portfolio'
 import { InstagramVideos } from '@/components/sections/InstagramVideos'
 import { ScrollTracker } from '@/lib/analytics/scroll-tracker'
 import { ProductSchema } from '@/components/seo/ProductSchema'
+import { FAQSchema } from '@/components/seo/FAQSchema'
+import { ServiceSchema } from '@/components/seo/ServiceSchema'
 import { motion } from 'framer-motion'
+import Head from 'next/head'
 import {
   Layout,
   Building2,
@@ -131,11 +134,30 @@ export default function SiteInstitucional() {
 
   return (
     <>
+      <Head>
+        <title>Site Institucional Profissional B2B | Presença Corporativa Completa</title>
+        <meta name="description" content="Site institucional completo que transmite credibilidade, gera autoridade e converte visitantes em clientes corporativos. Design profissional corporativo com até 5 páginas, blog integrado, área administrativa e SEO otimizado para Google." />
+        <meta name="keywords" content="site institucional, site corporativo, site empresarial, presença digital, site profissional, blog corporativo, área administrativa, CMS, site B2B" />
+        <link rel="canonical" href="https://revolux.digital/site-institucional" />
+        <meta property="og:title" content="Site Institucional Profissional B2B | Presença Corporativa Completa" />
+        <meta property="og:description" content="Site institucional completo que transmite credibilidade, gera autoridade e converte visitantes em clientes corporativos. Design profissional corporativo com até 5 páginas, blog integrado e SEO otimizado." />
+        <meta property="og:url" content="https://revolux.digital/site-institucional" />
+        <meta property="og:site_name" content="Revolux Digital" />
+        <meta property="og:type" content="website" />
+      </Head>
       <ProductSchema
         name="Site Institucional Profissional"
         description="Site institucional completo que transmite credibilidade, gera autoridade e converte visitantes em clientes corporativos. Design profissional corporativo com até 5 páginas, blog integrado, área administrativa e SEO otimizado para Google."
         price="R$ 2.997"
         category="Web Development Services"
+      />
+      <FAQSchema faqs={faqs} />
+      <ServiceSchema
+        name="Site Institucional Profissional"
+        description="Site institucional completo que transmite credibilidade, gera autoridade e converte visitantes em clientes corporativos. Design profissional corporativo com até 5 páginas, blog integrado, área administrativa e SEO otimizado para Google."
+        price="R$ 2.997"
+        category="Web Development Services"
+        url="https://revolux.digital/site-institucional"
       />
       <ScrollTracker />
       <Header />
